@@ -1,0 +1,338 @@
+
+@font-face {
+        font-family: "quicksand";
+        src: url("fonts/LightAndRegular.otf")
+        format('opentype');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: "quicksand";
+    src: url("fonts/BoldAndRegular.otf")
+    format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "futura";
+    src: url("fonts/Futura_Light_Regular.woff")
+    format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: "futura";
+    src: url("fonts/Futura_Light_Bold.woff")
+    format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+    font-family: 'futura';
+}
+h1{
+    font-family: 'futura';
+    font-weight: lighter;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1vw;
+    margin-left: 50px;
+}
+.ul > menu{
+    margin-top: 1000px;
+}
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+li {
+    font-family: "futura";
+    display: block;
+    letter-spacing: 0.1rem;
+    margin-left: 50px;
+}
+a{
+    color: grey;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+.menu {
+    padding: 0.5% 0% 0.5% 0;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+/*.img1 {
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+
+
+/* contact us page*/
+
+.contact{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+  
+    align-items: center;
+    grid-gap: 6rem;
+}
+.contact-img > img{
+    max-width: 100%;
+    width: 720px;
+    height: auto;
+    border-radius: 10px;
+}
+/*.contact-form > h1{
+    font-size: 5vw;
+    color: #000000;
+    margin-bottom: 20px;
+}*/
+
+.contact-form > p{
+    color: #000000ef;
+
+    text-align: center;
+
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.contact-form > form{
+    position: relative;
+    color: white;
+}
+
+.contact ::placeholder{
+    color: white;
+}
+
+.contact-form form input, form textarea{
+    font-family: 'quicksand';
+
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px;
+    border:none;
+    outline: none;
+    background: #191919;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+    text-transform: lowercase;
+}
+.contact-form form .button{
+    display: block;
+    background: rgb(0, 0, 0);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: fit-content;
+    cursor: pointer;
+}
+.contact-form form .button:hover{
+    border: 2px solid;
+    background: grey ;
+}
+
+
+/*@media (max-width: 1570px){
+    section{
+        padding: 80px 3%;
+    }
+}
+@media (max-width: 1000px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-form{
+        order: 2;
+    }
+    .contact-img img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}*/
+
+.photos {
+    display: flex;
+
+    padding: 0px 0px 0px 0px;
+    margin: 0px 5% 0px 5%;
+}
+
+.land1 {
+    position: relative;
+    width: 100%;        
+    padding: 0px 1% 1% 1%;
+}
+
+.img1 {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 74%;
+    transition: .5s ease;
+    opacity:0;
+
+    color: white;
+    font-family: 'futura';
+    font-weight: lighter;
+    letter-spacing: 10px;
+    font-size: 15px;
+    padding: 10%;
+    text-align: center;
+}
+
+.land1:hover .overlay {
+    opacity: 1;
+}
+
+.photos2 {
+    display: flex;
+
+    padding: 0px 0px 0px 0px;
+    margin: 0px 5% 0px 5%;
+}
+
+.land2 {
+    position: relative;
+    width: 100%;        
+    padding: 0px 1% 1% 1%;
+}
+
+.img2 {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 50%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 76%;
+    transition: .5s ease;
+    opacity:0;
+
+    color: white;
+    font-family: 'futura';
+    font-weight: lighter;
+    letter-spacing: 10px;
+    font-size: 15px;
+    padding: 10%;
+    text-align: center;
+}
+
+.land2:hover .overlay2 {
+    opacity: 1;
+}
+
+.links {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+    padding: 1px 0 1px 0;
+}
+
+.videos > p{
+    font-family: 'futura';
+    font-size: 0.8rem;
+
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+
+    margin-top: 1%;
+    margin-bottom: 5%;
+
+
+
+    border-width: 0.5px;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+#skullcandy{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: solid;
+    border-width: 4px;
+
+}
+#camera {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: solid;
+    border-width: 4px;
+
+}
+#snowy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: solid;
+    border-width: 4px;
+
+}
+#fb{
+    filter: grayscale(100%);
+    width: 2.1%;
+    margin: 10px;}
+#insta{ 
+    filter: grayscale(100%);
+    width: 2%;
+    margin: 10px;}
+#yt{ 
+    filter: grayscale(100%);
+    width: 2%;
+    margin: 10px;}
